@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        <style>
+            body {
+              font-family: sans-serif;
+            }
+            .form-container {
+              width: 40%;
+              margin: 0 auto;
+              padding: 15px;
+              border: 2px solid #ccc;
+              border-radius: 10px;
+            }
+            .form-title {
+              margin-bottom: 15px;
+              font-size: 24px;
+              font-weight: bold;
+              text-align: center;
+            }
+            .form-group {
+              margin-bottom: 18px;
+            }
+            .form-group label {
+              display: block;
+              margin-bottom: 5px;
+              font-weight: bold;
+            }
+            .form-control {
+              width: calc(70% - 30px);
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .form-checkbox {
+              margin-right: 10px;
+              glyph-orientation-horizontal: middle;
+            }
+            .instructions-textarea {
+              width: 40%;
+              padding: 8px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+              resize: vertical;
+            }
+            .submit-btn {
+              display: block;
+              width: 140px;
+              margin: 20px auto;
+              padding: 10px;
+              border: none;
+              border-radius: 5px;
+              background-color: #5c9ded;
+              color: #fff;
+              cursor: pointer;
+            }
+          </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="form-container">
+          <div class="form-title">Pizza Shop 2.0</div>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label>Pizza Toppings</label>
+              <label for="supreme" class="form-checkbox">
+                <input type="checkbox" id="supreme" name="topping" value="supreme"> Supreme
+              </label>
+              <label for="vegetarian" class="form-checkbox">
+                <input type="checkbox" id="vegetarian" name="topping" value="vegetarian"> Vegetarian
+              </label>
+              <label for="hawaiian" class="form-checkbox">
+                <input type="checkbox" id="hawaiian" name="topping" value="hawaiian"> Hawaiian
+            </label>
+        </div>
+        <div class="form-group">
+            <label>Pizza Sauce</label>
+            <select id="sauce" class="form-control">
+            <option value="tomato">Tomato</option>
+            <option value="bbq">BBQ</option>
+            <option value="pesto">Pesto</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Optional Extras</label>
+            <label for="extra-cheese" class="form-checkbox">
+            <input type="checkbox" id="extra-cheese" name="extras" value="extra-cheese"> Extra Cheese
+            </label>
+            <label for="gluten-free" class="form-checkbox">
+            <input type="checkbox" id="gluten-free" name="extras" value="gluten-free"> Gluten Free Base
+            </label>
+        </div>
+        <div class="form-group">
+          <label for="delivery-instructions">Delivery Instructions</label>
+          <textarea id="delivery-instructions" class="instructions-textarea" rows="4" placeholder="Enter delivery instructions"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send My Order</button>
+        </form>
+        </div>
+</body>
+</html>

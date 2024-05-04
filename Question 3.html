@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            th, td {
+              border: 3px double black;
+              padding: 8px;
+              text-align: center;
+            }
+           
+          </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table style="border-collapse: collapse; width: 100%;">
+          <tr>
+            <th colspan="4" style="border: 3px double black; padding: 8px; text-align: center;">TABLE HEADING SPANNING 4 COLUMNS</th>
+          </tr>
+          <tr>
+            <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+            <td colspan = "2" style="border: 3px double black; padding: 8px; text-align: center;">CELL SPANNING 2 COLUMNS</td>
+            <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="border: 3px double black; padding: 8px; text-align: center; background-color: lightgray;">Cell spanning 3 Rows with Gray Background</td>
+            <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+            <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+        <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+      </tr>
+      <tr>
+        <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+        <td colspan="2" rowspan="2" style="border: 3px double black; padding: 8px; text-align: center;">Cell spanning 2 rows and 2 Columns</td>
+      </tr>
+      <tr>
+        <td style="border: 3px double black; padding: 8px; text-align: center;">Normal Cell</td>
+      </tr>
+    </body>
+</html>
